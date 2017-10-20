@@ -15,8 +15,7 @@ module.exports = function (config) {
 
         // list of files / patterns to load in the browser
         files: [
-            './src/index.js',
-            './test/index.js'
+            'test/*.spec.js'
         ],
 
 
@@ -27,7 +26,22 @@ module.exports = function (config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            './src/index.js': ['coverage']
+            'src/*.js': ['webpack','sourcemap','coverage'],
+            'test/*.spec.js': ['webpack','sourcemap','coverage'],
+        },
+        webpack: {
+            module   : {
+                rules: [
+                    {
+                        test   : /\.js$/,
+                        use    : {
+                            loader: "babel-loader"
+
+                        },
+                        exclude: /node_modules/
+                    },
+                ]
+            },
         },
 
 
