@@ -1,0 +1,25 @@
+{
+  "name": "study-karma",
+  "version": "1.0.0",
+  "description": "学习karma及前端测试",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test karma start karma.conf.js --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youzaiyouzai666/study-karma.git"
+  },
+  "keywords": [
+    "karma"
+  ],
+  "author": "caoyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youzaiyouzai666/study-karma/issues"
+  },
+  "homepage": "https://github.com/youzaiyouzai666/study-karma#readme",
+  "devDependencies": {
+
+  }
+}
