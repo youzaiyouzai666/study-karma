@@ -1,7 +1,7 @@
+.idea
 .DS_Store
 node_modules
 *.log
 explorations
 .vscode
-.idea
 coverage
